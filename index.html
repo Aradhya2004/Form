@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genero Registration Form</title>
 <style>
+    .container{
+        border: 2px solid black;
+        display: inline-block;
+        width: 500px;
+        box-shadow: 3px 5px 8px black;
+    }
     body{
         background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrIaudVj05Otj-umxvEHetZ87ufiT90sFAQ&usqp=CAU);
         background-size:cover ;
@@ -24,6 +30,7 @@
     <br>
     <h2>Registration Form :</h2>
     <form>
+        <div class="container">
     <ul>
         <div>
             <li><label for="name">Name : </label>
@@ -41,7 +48,7 @@
             </div>
         <br>  
         <div>
-            <li><label for="password">Password:</label>
+            <li><label for="password">Password :</label>
             <input required type="password" name="pass" id="password"></input></li>
         </div>
         <br>  
@@ -57,9 +64,10 @@
          <label for="gold">Gold @1000</label><br>
          <input type="radio" name="radio" id="diamond">
          <label for="diamond">Diamond @1200</label>             
-            
+       <br>
+         <li><button class="btn">Pay Now</button></li>
     </ul>
-    <button>Pay Now</button>
+</div>
     </form>
 
 </body>
